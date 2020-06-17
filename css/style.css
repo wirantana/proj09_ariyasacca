@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/BlueWhiteClouds4k.png);
+    background-image: url(../images/sand_background.png);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;  /* remove gap on top of page */
 }
@@ -8,72 +8,83 @@ body{
     background-color: #fff;
     width: 80%;
     margin: auto;
+    color: #333;
 }
 
+/* Navigation area */
 #nav{
     position: fixed;
     top: 0;
     width: 80%;
-    margin: auto;
-    overflow: hidden;   /* will occupied whole box */
-    background-color: #333;
     height: 2.8em;
+    overflow: auto;
+    background-image: url(../images/sand_nav.png);
 }
 
 #nav-left{
-    font-size: 20px;
+    width: 33%;
+    height: 100%;
+    float: left;
+    font-size: 28px;
+    font-family: "monotype";
+    padding-left: 10px;
+    padding-top: 6px;
 }
 
 #nav-right{
+    width: 65%;
+    height: 100%;
     float: right;
-    font-size: 14px;
-}
-
-#nav-right input[type=text]{
-    float: right;
-    font-size: 14px;
-    margin: 13px 0px;
-    border-radius: 6px;
+    font-size: 15px;
+    padding-top: 12px;
+    text-align: right;
 }
 
 #nav a{
-    float: left;
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: 14px 10px;
+    color: #FDF604;
+    padding-right: 15px;
     text-decoration: none;
 }
   
 #nav a:hover{
-    color: #FC8F04
+    color: #fff
 }
 
+#nav-right input[type=text]{
+    font-size: 14px;
+    border-radius: 6px;
+    margin: 0 10px;
+}
+
+/* showcase area */
 #showcase{
     margin-top: 2.8em;
     height: 100%;
-    background-image: url(../images/sand.png);
+    background-color: #fff;
 }
 
 #showcase-1{
     overflow: hidden;
     min-height: 5em;
     font-family: "monotype";
-    color: #fff;
+    color: #333;
     font-size: 20px;
     text-align: justify;
     padding: 0 20px;
+    background-color: #e8e8e8;
 }
 
 #showcase-2{
     overflow: hidden;
-    min-height: 2.5em;
+    min-height: 2em;
     /*background-color: #CC7A04;*/
     color: #FCF104;
-    font-size: 18px;
+    font-size: 12px;
     text-align: center;
+    background-color: #686868;
 }
 
+/* Content area */
 #content{
     width: 100%;
     margin: auto;
@@ -92,10 +103,10 @@ body{
 #sidebar{
     width: 22%;
     float: right;
-    background-color: #E8EDE8;
     padding: 10px;
     text-align: justify;
     box-sizing: border-box;
+    background-color: #e8e8e8;
 }
 
 h3{
@@ -118,10 +129,12 @@ h3{
     src: url(../css/fonts/911Fonts.com_MonotypeCorsiva_Regular_-_911fonts.com_fonts_gyWJ.ttf);
 }
 
+/* Footer area */
 #footer{
     clear: both;
-    background-color: #333;
     color: white;
+    font-size: x-small;
     text-align: center;
     padding: 5px;
+    background-color: #686868;
 }
