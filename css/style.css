@@ -28,7 +28,7 @@ body{
     float: left;
     font-size: 28px;
     font-family: "monotype";
-    margin-top: 8px;
+    margin-top: 7px;
     padding-left: 10px;
 }
 
@@ -43,8 +43,7 @@ body{
     float: right;
     font-size: 15px;
     text-align: right;
-    margin-top: 10px;
-    border: solid 0.1px red;
+    margin-top: 11px;
 }
 
 #nav a{
@@ -69,24 +68,9 @@ body{
     display: none;
 }
 
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 740px) {
     #nav-right .mobile{
         display: inline-block;
-    }
-    #nav-right .tablet{
-        display: inline-block;
-    }
-    #nav-right .desktop{
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 650px){
-    #nav-right .mobile{
-        display: inline-block;
-    }
-    #nav-right .tablet{
-        display: none;
     }
     #nav-right .desktop{
         display: none;
@@ -154,7 +138,7 @@ h3{
 }
 
 /* responsive rules of content */
-@media only screen and (max-width:650px){    /* with @media, main & sidebar can adjust accordingly either side by side or on top of each other */
+@media only screen and (max-width:740px){    /* with @media, main & sidebar can adjust accordingly either side by side or on top of each other */
     #main{
         width: 100%;
         float: none;
