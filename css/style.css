@@ -1,10 +1,13 @@
 body{
-    background-image: url(../images/sand_background.png);
-    background-color: #222222;
-    /*font-family: Arial, Helvetica, sans-serif;*/
+    background-color: #333232;
     font-family: "raleway";
     font-size: 18px;
     margin: 0;  /* remove gap on top of page */
+}
+
+@font-face{                 /* font for #nav-left & showcase-1 */
+    font-family: 'monotype';
+    src: url(../css/fonts/monotypecorsiva/911Fonts.com_MonotypeCorsiva_Regular_-_911fonts.com_fonts_gyWJ.ttf);
 }
 
 @font-face{                 /* default font face */
@@ -25,9 +28,9 @@ body{
     top: 0;
     width: 80%;
     height: 2.8em;
-    overflow: auto;
-    /*background-color: #464646;*/
-    background-color: #2f4400;
+    /*overflow: auto;*/
+    /*background-color: #2f4400;*/
+    background-color: #464646;
 }
 
 #nav-left{
@@ -37,12 +40,7 @@ body{
     font-size: 28px;
     font-family: "monotype";
     margin-top: 7px;
-    padding-left: 10px;
-}
-
-@font-face{                 /* font face for #nav-left */
-    font-family: 'monotype';
-    src: url(../css/fonts/monotypecorsiva/911Fonts.com_MonotypeCorsiva_Regular_-_911fonts.com_fonts_gyWJ.ttf);
+    padding-left: 12px;
 }
 
 #nav-right{
@@ -51,7 +49,7 @@ body{
     float: right;
     font-size: 15px;
     text-align: right;
-    margin-top: 11px;
+    margin-top: 13px;
 }
 
 #nav a{
@@ -62,13 +60,8 @@ body{
   
 #nav a:hover{
     /*color: #e2e0e0;*/
-    color: #ffe300;
-}
-
-.tooltiptext {
-    visibility: hidden;
-    color: coral;
-    text-align: center;
+    /*color: #ffe300;*/
+    color: #e2e2e2;
 }
 
 #nav-right input[type=text]{
@@ -79,6 +72,7 @@ body{
 
 /* responsive rules of nav */
 #nav-right .mobile{
+    margin-right: 10px;
     display: none;
 }
 
@@ -96,9 +90,7 @@ body{
 #showcase{
     margin-top: 2.8em;
     height: 100%;
-    background-image: url(../images/others/LakeMountain.jpg);
-    /*background-image: url(../images/papuatemple.jpg);
-    background-image: url(../images/lakemountain.jpg);*/
+    background-image: url(../images/showcase/gijjakuta.JPG);
     background-size: 100% 100%;
 }
 
@@ -107,7 +99,7 @@ body{
     min-height: 5em;
     font-family: "monotype";
     color: #ffe300;
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
     padding: 0 20px;
 }
@@ -115,11 +107,18 @@ body{
 #showcase-2{
     overflow: hidden;
     min-height: 2em;
-    /*color: #fbff05;*/
-    color: #fff;
-    font-size: 20px;
+    font-family: 'raleway_normal';
+    font-weight: normal;
+    color: #04f84e;
+    font-size: 24px;
     text-align: center;
 }
+
+@font-face{                 /* font for showcase-2 */
+    font-family: 'raleway_normal';
+    src: url(fonts/raleway/Raleway-Regular.ttf)
+}
+
 /* end of showcase */
 
 /* Content */
@@ -132,8 +131,7 @@ body{
 #main{
     width: 77%;
     float: left;
-    margin-right: 5px;
-    padding: 0 5px 15px 15px;
+    padding: 0 12px;
     text-align: justify;
     color: #3f3f3f;
     box-sizing: border-box;     /* allows to include padding+border */
@@ -148,6 +146,33 @@ body{
     box-sizing: border-box;
     /*background-color: #e8e8e8;*/
     background-color: #464646;
+}
+
+.sidebar-tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.sidebar-tooltip .sidebar-tooltiptext{
+    visibility: hidden;
+    width: 60px;
+    font-family: 'raleway_normal';
+    font-size: 12px;
+    background-color: #686868;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+}
+
+.sidebar-tooltip:hover .sidebar-tooltiptext{
+    visibility: visible;
 }
 
 .sidebar-article{
