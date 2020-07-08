@@ -151,6 +151,7 @@ body{
 .sidebar-tooltip{
     position: relative;
     display: inline-block;
+    background-image: url;
 }
 
 .sidebar-tooltip .sidebar-tooltiptext{
