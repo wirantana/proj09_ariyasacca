@@ -1,7 +1,7 @@
 body{
     background-color: #333232;
     font-family: "raleway";
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;  /* remove gap on top of page */
 }
 
@@ -142,9 +142,7 @@ body{
     float: right;
     padding: 10px 10px 0 10px;
     text-align: justify;
-
     box-sizing: border-box;
-    /*background-color: #e8e8e8;*/
     background-color: #464646;
 }
 
